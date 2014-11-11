@@ -1,0 +1,114 @@
+{namespace sz=Ecom\SzDownloadcenter\ViewHelpers}
+
+<div id="productFiles">
+	<div class="accordion" id="accordion">
+		<f:for each="{fileCategories}" as="fileCategory" iteration="iterator">
+
+			<h3>{fileCategory.title}</h3>
+
+				<div id="collapse{iterator.index}" class="accordion-body collapse in">
+					<div class="accordion-inner">
+						<div class="header clearfix">
+							<div class="fileName">
+								<f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:tx_szdownloadcenter_domain_model_file.filename" />
+							</div>
+							<div class="revision">
+								<f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:tx_szdownloadcenter_domain_model_file.rev" />
+							</div>
+							<div class="fileSize">
+								<f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:tx_szdownloadcenter_domain_model_file.size" />
+							</div>
+							<div class="lastChange">
+								<f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:tx_szdownloadcenter_domain_model_file.lastModified" />
+							</div>
+							<div class="language">
+								<f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:tx_szdownloadcenter_domain_model_file.language" />
+							</div>
+						</div>
+						<f:for each="{fileCategory.files}" as="file" iteration="fileIterator">
+							<div class="row clearfix even{fileIterator.isEven}">
+								<div class="fileName">
+									<div class="headline">{file.title}</div>
+									<div class="sub clearfix">
+										<label class="fileEnd">
+											<f:if condition="{file.falFile}">
+												<f:then>{file.falFile.originalResource.properties.extension}</f:then>
+												<f:else>{file.file -> sz:Getfileend()}</f:else>
+											</f:if>
+										</label>
+										<label>
+											<a href="{f:if(condition: '{file.falFile}', then: '{file.falFile.originalResource.publicUrl}', else: '{file.file}')}" target="_blank">
+												<f:if condition="{f:if(condition: '{file.falFile}', then: '{file.falFile.originalResource.properties.extension}', else: '{file.file -> sz:Getfileend()}')} == 'html'">
+													<f:then><f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:tx_szdownloadcenter_domain_model_file.open" /></f:then>
+													<f:else><f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:tx_szdownloadcenter_domain_model_file.download" /></f:else>
+												</f:if>
+											</a>
+										</label>
+									</div>
+
+								</div>
+								<div class="revision">
+									<f:if condition="{file.revision}">
+										<f:then>{file.revision}</f:then>
+										<f:else>-</f:else>
+									</f:if>
+								</div>
+								<div class="fileSize">
+									<f:if condition="{file.falFile}">
+										<f:then><sz:Filesize size="{file.falFile.originalResource.properties.size}" labels="{f:translate(key:'LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:fileSizeLabels')}" decPoint="{f:translate(key:'LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:decPoint')}" thousandsSep="{f:translate(key:'LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:thousandsSep')}" /></f:then>
+										<f:else><sz:Filesize file="{file.file}" labels="{f:translate(key:'LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:fileSizeLabels')}" decPoint="{f:translate(key:'LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:decPoint')}" thousandsSep="{f:translate(key:'LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:thousandsSep')}" /></f:else>
+									</f:if>
+								</div>
+								<div class="lastChange">
+									{file.lastedit -> f:format.date()}
+								</div>
+								<div class="language">
+									<f:if condition="{file.sysLanguageUid} == 0">
+										<f:then><f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:tx_szdownloadcenter_domain_model_file.lang{sz:language(languageId:'{file.sysLanguageUid}')}" /></f:then>
+										<f:else>
+											<span class="lang-{sz:language(languageId:'{file.sysLanguageUid}')}"/></span>
+											<br/>
+											<f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:tx_szdownloadcenter_domain_model_file.lang{sz:language(languageId:'{file.sysLanguageUid}')}" />
+										</f:else>
+									</f:if>
+								</div>
+							</div>
+						</f:for>
+					</div>
+				</div>
+		</f:for>
+	</div>
+</div>
+
+<f:if condition="{0:product.falImage,1:product.text} != {0:'',1:''}">
+	<div id="productDetail">
+
+		<div class="headline">
+			<f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:tx_szdownloadcenter_domain_model_file.moreproduct" /> {product.title}
+		</div>
+
+		<div class="wrapper clearfix">
+			<f:if condition="{product.falImage}">
+				<f:then>
+					<div class="image"><f:image src="{product.falImage.uid}" alt="{product.title}" width="253m" height="148m" treatIdAsReference="1" /></div>
+				</f:then>
+				<f:else>
+					<f:if condition="{product.image}">
+						<div class="image"><f:image src="uploads/tx_szdownloadcenter/{product.image}" alt="{product.title}" width="253m" height="148m" /></div>
+					</f:if>
+				</f:else>
+			</f:if>
+			<div class="text">
+				{product.text -> f:format.html()}
+				<f:if condition="{product.link}">
+					<div class="morelink">
+						<f:link.page pageUid="{product.link}">
+						{product.linktext}
+							<i class="arrow"></i>
+						</f:link.page>
+					</div>
+				</f:if>
+			</div>
+		</div>
+	</div>
+</f:if>

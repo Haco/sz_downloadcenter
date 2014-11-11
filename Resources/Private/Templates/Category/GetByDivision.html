@@ -1,0 +1,15 @@
+<option value="0">
+    <f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:tx_szdownloadcenter_domain_model_file.selectCategory" />
+</option>
+<f:for each="{categories}" as="category">
+    <option value="{category.uid}">
+        <f:if condition="{category.title}">
+        	<f:then>
+                {category.title}
+        	</f:then>
+            <f:else>
+                {category.localization.title}
+            </f:else>
+        </f:if>
+    </option>
+</f:for>

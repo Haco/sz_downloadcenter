@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-05-28T07:53:50Z">
+		<header>
+			<type>database</type>
+			<description>Language labels for database tables/fields belonging to extension 'sz_downloadcenter'</description>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="setcard" xml:space="preserve">
+			<source>Setcard</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval" xml:space="preserve">
+			<source>Approval</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.fal_icon" xml:space="preserve">
+			<source>Icon (FAL)</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.icon" xml:space="preserve">
+			<source>Icon</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.fal_image" xml:space="preserve">
+			<source>Image (FAL)</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.image" xml:space="preserve">
+			<source>Image</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.label" xml:space="preserve">
+			<source>Label</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.title" xml:space="preserve">
+			<source>Title</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_attestation" xml:space="preserve">
+			<source>Attestation</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_attestation.approval" xml:space="preserve">
+			<source>Approval</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_attestation.identification" xml:space="preserve">
+			<source>Identification</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_attestation.title" xml:space="preserve">
+			<source>Title</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_category" xml:space="preserve">
+			<source>Category</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_category.products" xml:space="preserve">
+			<source>Products</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_category.title" xml:space="preserve">
+			<source>Title</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_certification" xml:space="preserve">
+			<source>Certification</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_certification.approval" xml:space="preserve">
+			<source>Approval</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_certification.identification" xml:space="preserve">
+			<source>Identification</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_certification.title" xml:space="preserve">
+			<source>Title</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_division" xml:space="preserve">
+			<source>Division</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_division.categories" xml:space="preserve">
+			<source>Categories</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_division.title" xml:space="preserve">
+			<source>Title</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file" xml:space="preserve">
+			<source>File</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.approval" xml:space="preserve">
+			<source>Approval</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.certification" xml:space="preserve">
+			<source>Certification</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.file" xml:space="preserve">
+			<source>File</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.fal_file" xml:space="preserve">
+			<source>File (FAL)</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.file_category" xml:space="preserve">
+			<source>File Category</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.identification" xml:space="preserve">
+			<source>Identification</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.lastedit" xml:space="preserve">
+			<source>Lastedit</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.products" xml:space="preserve">
+			<source>Products</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.revision" xml:space="preserve">
+			<source>Revision</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.title" xml:space="preserve">
+			<source>Title</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_filecategory" xml:space="preserve">
+			<source>File Category</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_filecategory.title" xml:space="preserve">
+			<source>Title</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product" xml:space="preserve">
+			<source>Product</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.attestations" xml:space="preserve">
+			<source>Attestations</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.certifications" xml:space="preserve">
+			<source>Certifications</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.discontinued" xml:space="preserve">
+			<source>Discontinued</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.division" xml:space="preserve">
+			<source>Division</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.files" xml:space="preserve">
+			<source>Files</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.fal_image" xml:space="preserve">
+			<source>Image (FAL)</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.image" xml:space="preserve">
+			<source>Image</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.link" xml:space="preserve">
+			<source>Link</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.linktext" xml:space="preserve">
+			<source>Linktext</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.text" xml:space="preserve">
+			<source>Text</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.title" xml:space="preserve">
+			<source>Title</source>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.zone" xml:space="preserve">
+			<source>Zone</source>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

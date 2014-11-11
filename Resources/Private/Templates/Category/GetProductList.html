@@ -1,0 +1,27 @@
+<option value="0">
+    <f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:tx_szdownloadcenter_domain_model_file.selectProduct" />
+</option>
+
+<f:if condition="{discontinued}">
+    <f:then>
+        <f:for each="{products}" as="product">
+            <f:if condition="{product.discontinued} != 1">
+                <option value="{product.uid}">
+                    {product.title}
+                </option>
+            </f:if>
+        </f:for>
+    </f:then>
+    <f:else>
+        <f:for each="{products}" as="product">
+            <option value="{product.uid}">
+                {product.title}
+                <f:if condition="{product.discontinued}">
+                    (<f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:tx_szdownloadcenter_domain_model_file.discontinued" />)
+                </f:if>
+            </option>
+        </f:for>
+    </f:else>
+</f:if>
+
+

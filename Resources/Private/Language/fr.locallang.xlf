@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2014-06-04T13:24:12Z">
+		<header>
+			<type>module</type>
+			<description>Language labels for the Downloadcenter extension in the FRONTEND</description>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="decPoint" approved="yes" xml:space="preserve">
+			<source>.</source>
+			<target>,</target>
+		</trans-unit>
+		<trans-unit id="fileSizeLabels" approved="yes" xml:space="preserve">
+			<source> Byte| KB| MB| GB</source>
+			<target> Octets| Ko| Mo| Go</target>
+		</trans-unit>
+		<trans-unit id="thousandsSep" approved="yes" xml:space="preserve">
+			<source>,</source>
+			<target>,</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.certificationNo" approved="yes" xml:space="preserve">
+			<source>Certification No.:</source>
+			<target>N° de certification :</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.division0" approved="yes" xml:space="preserve">
+			<source>Division 0</source>
+			<target>Division 0</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.division1" approved="yes" xml:space="preserve">
+			<source>Division 1</source>
+			<target>Division 1</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.division2" approved="yes" xml:space="preserve">
+			<source>Division 2</source>
+			<target>Division 2</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.division3" approved="yes" xml:space="preserve">
+			<source>Division 0/20</source>
+			<target>Division 0 / 20</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.division4" approved="yes" xml:space="preserve">
+			<source>Division 1/21</source>
+			<target>Division 1 / 21</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.division5" approved="yes" xml:space="preserve">
+			<source>Division 2/22</source>
+			<target>Division 2 / 22</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.zone0" approved="yes" xml:space="preserve">
+			<source>Zone 0</source>
+			<target>Zone 0</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.zone1" approved="yes" xml:space="preserve">
+			<source>Zone 1</source>
+			<target>Zone 1</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.zone2" approved="yes" xml:space="preserve">
+			<source>Zone 2</source>
+			<target>Zone 2</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.zone3" approved="yes" xml:space="preserve">
+			<source>Zone 0/20</source>
+			<target>Zone 0 / 20</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.zone4" approved="yes" xml:space="preserve">
+			<source>Zone 1/21</source>
+			<target>Zone 1 / 21</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.zone5" approved="yes" xml:space="preserve">
+			<source>Zone 2/22</source>
+			<target>Zone 2 / 22</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_category" approved="yes" xml:space="preserve">
+			<source>Category</source>
+			<target>Catégorie</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_category.products" approved="yes" xml:space="preserve">
+			<source>Products</source>
+			<target>Produits</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_category.title" approved="yes" xml:space="preserve">
+			<source>Title</source>
+			<target>Titre</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_certification.download" approved="yes" xml:space="preserve">
+			<source>Download Certification</source>
+			<target>Télécharger la certification</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_division" approved="yes" xml:space="preserve">
+			<source>Division</source>
+			<target>Branche</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_division.categories" approved="yes" xml:space="preserve">
+			<source>Categories</source>
+			<target>Catégories</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_division.title" approved="yes" xml:space="preserve">
+			<source>Title</source>
+			<target>Titre</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file" approved="yes" xml:space="preserve">
+			<source>File</source>
+			<target>Fichier</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.discontinued" approved="yes" xml:space="preserve">
+			<source>Discontinued</source>
+			<target>Abandonné</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.discontinuedCheck" approved="yes" xml:space="preserve">
+			<source>Hide discontinued producs</source>
+			<target>Masquer les produits abandonnés</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.download" approved="yes" xml:space="preserve">
+			<source>Download</source>
+			<target>Télécharger</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.file" approved="yes" xml:space="preserve">
+			<source>File</source>
+			<target>Fichier</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.filecategories" approved="yes" xml:space="preserve">
+			<source>File categories</source>
+			<target>Catégories du fichier</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.filename" approved="yes" xml:space="preserve">
+			<source>File name</source>
+			<target>Nom du fichier</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.info" approved="yes" xml:space="preserve">
+			<source>You can find your product by selecting the product division and corresponding category.</source>
+			<target>Vous pouvez trouver votre produit en sélectionnant la branche du produit puis la catégorie correspondante.</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.langmulti" approved="yes" xml:space="preserve">
+			<source>multilingual</source>
+			<target>multilingue</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.language" approved="yes" xml:space="preserve">
+			<source>Language</source>
+			<target>Langue</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.lastModified" approved="yes" xml:space="preserve">
+			<source>Last modified</source>
+			<target>Dernière modification</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.lastedit" approved="yes" xml:space="preserve">
+			<source>Last modified</source>
+			<target>Dernière modification</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.moreproduct" approved="yes" xml:space="preserve">
+			<source>More about the product</source>
+			<target>En savoir plus</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.open" approved="yes" xml:space="preserve">
+			<source>Open</source>
+			<target>Ouvrir</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.rev" approved="yes" xml:space="preserve">
+			<source>Rev.</source>
+			<target>Rév.</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.revision" approved="yes" xml:space="preserve">
+			<source>Revision</source>
+			<target>Révision</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.selectCategory" approved="yes" xml:space="preserve">
+			<source>Select a category</source>
+			<target>Sélectionner une catégorie</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.selectDivision" approved="yes" xml:space="preserve">
+			<source>Select a division</source>
+			<target>Sélectionner une branche</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.selectProduct" approved="yes" xml:space="preserve">
+			<source>Select a product</source>
+			<target>Sélectionner un produit</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.size" approved="yes" xml:space="preserve">
+			<source>Size</source>
+			<target>Taille</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.title" approved="yes" xml:space="preserve">
+			<source>Title</source>
+			<target>Titre</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_filecategory" approved="yes" xml:space="preserve">
+			<source>File category</source>
+			<target>Catégorie du fichier</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_filecategory.title" approved="yes" xml:space="preserve">
+			<source>Title</source>
+			<target>Titre</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product" approved="yes" xml:space="preserve">
+			<source>Product</source>
+			<target>Produit</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.discontinued" approved="yes" xml:space="preserve">
+			<source>Discontinued</source>
+			<target>Abandonné</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.files" approved="yes" xml:space="preserve">
+			<source>Files</source>
+			<target>Fichiers</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.image" approved="yes" xml:space="preserve">
+			<source>Image</source>
+			<target>Image</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.link" approved="yes" xml:space="preserve">
+			<source>Link to page</source>
+			<target>Lien vers la page</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.linktext" approved="yes" xml:space="preserve">
+			<source>Link text</source>
+			<target>Texte du lien</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.text" approved="yes" xml:space="preserve">
+			<source>Text</source>
+			<target>Texte</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.title" approved="yes" xml:space="preserve">
+			<source>Title</source>
+			<target>Titre</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

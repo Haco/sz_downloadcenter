@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="ch" datatype="plaintext" original="messages" date="2014-06-04T13:24:12Z">
+		<header>
+			<type>module</type>
+			<description>Language labels for the Downloadcenter extension in the FRONTEND</description>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="decPoint" approved="yes" xml:space="preserve">
+			<source>.</source>
+			<target>、</target>
+		</trans-unit>
+		<trans-unit id="fileSizeLabels" approved="yes" xml:space="preserve">
+			<source> Byte| KB| MB| GB</source>
+			<target>字节| KB| MB| GB</target>
+		</trans-unit>
+		<trans-unit id="thousandsSep" approved="yes" xml:space="preserve">
+			<source>,</source>
+			<target>,</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.certificationNo" approved="yes" xml:space="preserve">
+			<source>Certification No.:</source>
+			<target>认证编号：</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.division0" approved="yes" xml:space="preserve">
+			<source>Division 0</source>
+			<target>部门 0</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.division1" approved="yes" xml:space="preserve">
+			<source>Division 1</source>
+			<target>部门 1</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.division2" approved="yes" xml:space="preserve">
+			<source>Division 2</source>
+			<target>部门 2</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.division3" approved="yes" xml:space="preserve">
+			<source>Division 0/20</source>
+			<target>部门 0/20</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.division4" approved="yes" xml:space="preserve">
+			<source>Division 1/21</source>
+			<target>部门 1/21</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.division5" approved="yes" xml:space="preserve">
+			<source>Division 2/22</source>
+			<target>部门 2/22</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.zone0" approved="yes" xml:space="preserve">
+			<source>Zone 0</source>
+			<target>区域 0</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.zone1" approved="yes" xml:space="preserve">
+			<source>Zone 1</source>
+			<target>区域 1</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.zone2" approved="yes" xml:space="preserve">
+			<source>Zone 2</source>
+			<target>区域 2</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.zone3" approved="yes" xml:space="preserve">
+			<source>Zone 0/20</source>
+			<target>区域 0/20</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.zone4" approved="yes" xml:space="preserve">
+			<source>Zone 1/21</source>
+			<target>区域 1/21</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.zone5" approved="yes" xml:space="preserve">
+			<source>Zone 2/22</source>
+			<target>区域 2/22</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_category" approved="yes" xml:space="preserve">
+			<source>Category</source>
+			<target>类别</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_category.products" approved="yes" xml:space="preserve">
+			<source>Products</source>
+			<target>产品</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_category.title" approved="yes" xml:space="preserve">
+			<source>Title</source>
+			<target>标题</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_certification.download" approved="yes" xml:space="preserve">
+			<source>Download Certification</source>
+			<target>下载认证</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_division" approved="yes" xml:space="preserve">
+			<source>Division</source>
+			<target>部门</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_division.categories" approved="yes" xml:space="preserve">
+			<source>Categories</source>
+			<target>类别</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_division.title" approved="yes" xml:space="preserve">
+			<source>Title</source>
+			<target>标题</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file" approved="yes" xml:space="preserve">
+			<source>File</source>
+			<target>文件</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.discontinued" approved="yes" xml:space="preserve">
+			<source>Discontinued</source>
+			<target>已停产</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.discontinuedCheck" approved="yes" xml:space="preserve">
+			<source>Hide discontinued producs</source>
+			<target>隐藏已停产产品</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.download" approved="yes" xml:space="preserve">
+			<source>Download</source>
+			<target>下载</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.file" approved="yes" xml:space="preserve">
+			<source>File</source>
+			<target>文件</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.filecategories" approved="yes" xml:space="preserve">
+			<source>File categories</source>
+			<target>文件类别</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.filename" approved="yes" xml:space="preserve">
+			<source>File name</source>
+			<target>文件名</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.info" approved="yes" xml:space="preserve">
+			<source>You can find your product by selecting the product division and corresponding category.</source>
+			<target>您可以通过选择产品部门和相应类别来查找产品。</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.langmulti" approved="yes" xml:space="preserve">
+			<source>multilingual</source>
+			<target>多语种</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.language" approved="yes" xml:space="preserve">
+			<source>Language</source>
+			<target>语言</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.lastModified" approved="yes" xml:space="preserve">
+			<source>Last modified</source>
+			<target>最后修改时间</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.lastedit" approved="yes" xml:space="preserve">
+			<source>Last modified</source>
+			<target>最后修改时间</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.moreproduct" approved="yes" xml:space="preserve">
+			<source>More about the product</source>
+			<target>产品详情</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.open" approved="yes" xml:space="preserve">
+			<source>Open</source>
+			<target>打开</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.rev" approved="yes" xml:space="preserve">
+			<source>Rev.</source>
+			<target>修订版</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.revision" approved="yes" xml:space="preserve">
+			<source>Revision</source>
+			<target>修订版</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.selectCategory" approved="yes" xml:space="preserve">
+			<source>Select a category</source>
+			<target>选择类别</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.selectDivision" approved="yes" xml:space="preserve">
+			<source>Select a division</source>
+			<target>选择部门</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.selectProduct" approved="yes" xml:space="preserve">
+			<source>Select a product</source>
+			<target>选择产品</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.size" approved="yes" xml:space="preserve">
+			<source>Size</source>
+			<target>尺寸</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.title" approved="yes" xml:space="preserve">
+			<source>Title</source>
+			<target>标题</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_filecategory" approved="yes" xml:space="preserve">
+			<source>File category</source>
+			<target>文件类别</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_filecategory.title" approved="yes" xml:space="preserve">
+			<source>Title</source>
+			<target>标题</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product" approved="yes" xml:space="preserve">
+			<source>Product</source>
+			<target>产品</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.discontinued" approved="yes" xml:space="preserve">
+			<source>Discontinued</source>
+			<target>已停产</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.files" approved="yes" xml:space="preserve">
+			<source>Files</source>
+			<target>文件</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.image" approved="yes" xml:space="preserve">
+			<source>Image</source>
+			<target>图像</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.link" approved="yes" xml:space="preserve">
+			<source>Link to page</source>
+			<target>所链接的网页</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.linktext" approved="yes" xml:space="preserve">
+			<source>Link text</source>
+			<target>链接描述文字</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.text" approved="yes" xml:space="preserve">
+			<source>Text</source>
+			<target>文字</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.title" approved="yes" xml:space="preserve">
+			<source>Title</source>
+			<target>标题</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

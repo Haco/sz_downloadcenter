@@ -1,0 +1,40 @@
+<f:layout name="Setcard" />
+
+<f:section name="main">
+	<div id="approvalList" class="clearfix">
+		<div class="zoneWrap">
+			<div class="zone">
+				<f:if condition="{product.zone} > -1">
+					<f:translate id="tx_szdownloadcenter_domain_model_approval.zone{product.zone}" />
+				</f:if>
+			</div>
+			<div class="division">
+				<f:if condition="{product.division} > -1">
+					<f:translate id="tx_szdownloadcenter_domain_model_approval.division{product.division}" />
+				</f:if>
+			</div>
+		</div>
+		<f:if condition="{approvals -> f:count()} > 4">
+			<f:then><div class="approvalWrap clearfix clickable"></f:then>
+			<f:else><div class="approvalWrap clearfix"></f:else>
+		</f:if>
+			<div id="approvals">
+				<f:for each="{approvals}" as="approval" iteration="iterator">
+					<div class="item" rel="ap{approval.data.uid}">
+						<span>{approval.data.label}</span>
+						<f:if condition="{approval.data.falIcon}">
+							<f:then>
+								<f:image src="{approval.data.falIcon.uid}" alt="{approval.data.label}" width="24" height="24" treatIdAsReference="1" />
+							</f:then>
+							<f:else>
+								<f:if condition="{approval.data.icon}">
+									<f:image src="{approval.data.icon}" alt="{approval.data.label}" width="24" height="24" />
+								</f:if>
+							</f:else>
+						</f:if>
+					</div>
+				</f:for>
+			</div>
+		</div>
+	</div>
+</f:section>

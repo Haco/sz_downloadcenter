@@ -1,0 +1,44 @@
+<f:layout name="Default" />
+
+<f:section name="main">
+
+
+    <div id="productSelect">
+        <select name="division" id="divisionSel">
+            <option value="0">
+                <f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:tx_szdownloadcenter_domain_model_file.selectDivision" />
+            </option>
+            <f:for each="{divisions}" as="division">
+                <option value="{division.uid}">{division.title}</option>
+            </f:for>
+        </select>
+
+        <select name="category" id="categorySel" disabled="disabled">
+            <option value="0">
+                <f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:tx_szdownloadcenter_domain_model_file.selectCategory" />
+            </option>
+        </select>
+
+        <select name="product" id="productSel" disabled="disabled">
+            <option value="0">
+                <f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:tx_szdownloadcenter_domain_model_file.selectProduct" />
+            </option>
+        </select>
+
+        <div class="discontinuedBox disabled">
+            <f:form.checkbox id="discontinued" property="discontinued" value="1"  disabled="disabled"/>
+            <label for="discontinued">
+                <f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:tx_szdownloadcenter_domain_model_file.discontinuedCheck" />
+            </label>
+        </div>
+    </div>
+
+    <div id="productSelectInfo">
+        <f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:tx_szdownloadcenter_domain_model_file.info" />
+    </div>
+
+    <div id="productData">
+
+    </div>
+
+</f:section>

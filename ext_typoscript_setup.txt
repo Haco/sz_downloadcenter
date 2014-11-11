@@ -1,0 +1,11 @@
+config.tx_extbase {
+    persistence {
+        classes {
+            Tx_SzDownloadcenter_Domain_Model_Language {
+                mapping {
+                    tableName = sys_language
+                }
+            }
+    	}
+    }
+}

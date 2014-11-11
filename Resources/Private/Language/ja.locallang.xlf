@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="ja" datatype="plaintext" original="messages" date="2014-06-04T13:24:12Z">
+		<header>
+			<type>module</type>
+			<description>Language labels for the Downloadcenter extension in the FRONTEND</description>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="fileSizeLabels" approved="yes" xml:space="preserve">
+			<source> Byte| KB| MB| GB</source>
+			<target>バイト|キロバイト|メガバイト|ギガバイト</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.certificationNo" approved="yes" xml:space="preserve">
+			<source>Certification No.:</source>
+			<target>証明書番号:</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.division0" approved="yes" xml:space="preserve">
+			<source>Division 0</source>
+			<target>部門0</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.division1" approved="yes" xml:space="preserve">
+			<source>Division 1</source>
+			<target>部門1</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.division2" approved="yes" xml:space="preserve">
+			<source>Division 2</source>
+			<target>部門2</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.division3" approved="yes" xml:space="preserve">
+			<source>Division 0/20</source>
+			<target>部門0/20</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.division4" approved="yes" xml:space="preserve">
+			<source>Division 1/21</source>
+			<target>部門1/21</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.division5" approved="yes" xml:space="preserve">
+			<source>Division 2/22</source>
+			<target>部門2/22</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.zone0" approved="yes" xml:space="preserve">
+			<source>Zone 0</source>
+			<target>ゾーン0</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.zone1" approved="yes" xml:space="preserve">
+			<source>Zone 1</source>
+			<target>ゾーン1</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.zone2" approved="yes" xml:space="preserve">
+			<source>Zone 2</source>
+			<target>ゾーン2</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.zone3" approved="yes" xml:space="preserve">
+			<source>Zone 0/20</source>
+			<target>ゾーン0/20</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.zone4" approved="yes" xml:space="preserve">
+			<source>Zone 1/21</source>
+			<target>ゾーン1/21</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_approval.zone5" approved="yes" xml:space="preserve">
+			<source>Zone 2/22</source>
+			<target>ゾーン2/22</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_category" approved="yes" xml:space="preserve">
+			<source>Category</source>
+			<target>カテゴリ</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_category.products" approved="yes" xml:space="preserve">
+			<source>Products</source>
+			<target>製品</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_category.title" approved="yes" xml:space="preserve">
+			<source>Title</source>
+			<target>タイトル</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_certification.download" approved="yes" xml:space="preserve">
+			<source>Download Certification</source>
+			<target>証明書のダウンロード</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_division" approved="yes" xml:space="preserve">
+			<source>Division</source>
+			<target>部門</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_division.categories" approved="yes" xml:space="preserve">
+			<source>Categories</source>
+			<target>カテゴリ</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_division.title" approved="yes" xml:space="preserve">
+			<source>Title</source>
+			<target>タイトル</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file" approved="yes" xml:space="preserve">
+			<source>File</source>
+			<target>ファイル</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.discontinued" approved="yes" xml:space="preserve">
+			<source>Discontinued</source>
+			<target>販売終了</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.discontinuedCheck" approved="yes" xml:space="preserve">
+			<source>Hide discontinued producs</source>
+			<target>販売終了した製品を非表示にする</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.download" approved="yes" xml:space="preserve">
+			<source>Download</source>
+			<target>ダウンロード</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.file" approved="yes" xml:space="preserve">
+			<source>File</source>
+			<target>ファイル</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.filecategories" approved="yes" xml:space="preserve">
+			<source>File categories</source>
+			<target>ファイルカテゴリ</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.filename" approved="yes" xml:space="preserve">
+			<source>File name</source>
+			<target>ファイル名</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.info" approved="yes" xml:space="preserve">
+			<source>You can find your product by selecting the product division and corresponding category.</source>
+			<target>製品を検索するには、製品部門と対応するカテゴリを選択します。</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.langmulti" approved="yes" xml:space="preserve">
+			<source>multilingual</source>
+			<target>多言語</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.language" approved="yes" xml:space="preserve">
+			<source>Language</source>
+			<target>言語</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.lastModified" approved="yes" xml:space="preserve">
+			<source>Last modified</source>
+			<target>最終更新時刻</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.lastedit" approved="yes" xml:space="preserve">
+			<source>Last modified</source>
+			<target>最終更新時刻</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.moreproduct" approved="yes" xml:space="preserve">
+			<source>More about the product</source>
+			<target>製品の詳細</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.open" approved="yes" xml:space="preserve">
+			<source>Open</source>
+			<target>オープン</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.rev" approved="yes" xml:space="preserve">
+			<source>Rev.</source>
+			<target>リビジョン</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.revision" approved="yes" xml:space="preserve">
+			<source>Revision</source>
+			<target>リビジョン</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.selectCategory" approved="yes" xml:space="preserve">
+			<source>Select a category</source>
+			<target>カテゴリを選択</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.selectDivision" approved="yes" xml:space="preserve">
+			<source>Select a division</source>
+			<target>部門を選択</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.selectProduct" approved="yes" xml:space="preserve">
+			<source>Select a product</source>
+			<target>製品を選択</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.size" approved="yes" xml:space="preserve">
+			<source>Size</source>
+			<target>サイズ</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_file.title" approved="yes" xml:space="preserve">
+			<source>Title</source>
+			<target>タイトル</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_filecategory" approved="yes" xml:space="preserve">
+			<source>File category</source>
+			<target>ファイルカテゴリ</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_filecategory.title" approved="yes" xml:space="preserve">
+			<source>Title</source>
+			<target>タイトル</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product" approved="yes" xml:space="preserve">
+			<source>Product</source>
+			<target>製品</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.discontinued" approved="yes" xml:space="preserve">
+			<source>Discontinued</source>
+			<target>販売終了</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.files" approved="yes" xml:space="preserve">
+			<source>Files</source>
+			<target>ファイル</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.image" approved="yes" xml:space="preserve">
+			<source>Image</source>
+			<target>画像</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.link" approved="yes" xml:space="preserve">
+			<source>Link to page</source>
+			<target>ページへのリンク</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.linktext" approved="yes" xml:space="preserve">
+			<source>Link text</source>
+			<target>リンクテキスト</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.text" approved="yes" xml:space="preserve">
+			<source>Text</source>
+			<target>テキスト</target>
+		</trans-unit>
+		<trans-unit id="tx_szdownloadcenter_domain_model_product.title" approved="yes" xml:space="preserve">
+			<source>Title</source>
+			<target>タイトル</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

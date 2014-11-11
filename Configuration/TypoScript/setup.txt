@@ -1,0 +1,96 @@
+plugin.tx_szdownloadcenter {
+	view {
+		templateRootPath = {$plugin.tx_szdownloadcenter.view.templateRootPath}
+		partialRootPath = {$plugin.tx_szdownloadcenter.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_szdownloadcenter.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_szdownloadcenter.persistence.storagePid}
+
+		enableAutomaticCacheClearing = 1
+		updateReferenceIndex = 0
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		 rewrittenPropertyMapper = 1
+	}
+}
+
+
+config.tx_extbase {
+	persistence {
+		classes {
+			Ecom\SzDownloadcenter\Domain\Model\Language {
+				mapping {
+					tableName = sys_language
+					recordType = Tx_SzDownloadcenter_Language
+				}
+			}
+			Ecom\SzDownloadcenter\Domain\Model\Category {
+				mapping {
+					columns {
+						l10n_parent.mapOnProperty = localization
+					}
+				}
+			}
+			Ecom\SzDownloadcenter\Domain\Model\Product {
+				mapping {
+					columns {
+						l10n_parent.mapOnProperty = localization
+						sorting.mapOnProperty = sorting
+					}
+				}
+			}
+			Ecom\SzDownloadcenter\Domain\Model\Approval {
+				mapping {
+					columns {
+						sorting.mapOnProperty = sorting
+					}
+				}
+			}
+			Ecom\SzDownloadcenter\Domain\Model\FileCategory {
+				mapping {
+					columns {
+						sorting.mapOnProperty = sorting
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+szdownloadCategory = PAGE
+szdownloadCategory {
+  typeNum = 89657201
+
+  10 < tt_content.list.20.szdownloadcenter_pi96
+
+  config {
+	disableAllHeaderCode = 1
+	xhtml_cleaning = 0
+	admPanel = 0
+		  debug = 0
+		  no_cache = 1
+	additionalHeaders = Content-type:application/json
+  }
+}
+
+
+szdownloadProduct = PAGE
+szdownloadProduct {
+  typeNum = 89657202
+
+  10 < tt_content.list.20.szdownloadcenter_pi97
+
+  config {
+	disableAllHeaderCode = 1
+	xhtml_cleaning = 0
+	admPanel = 0
+		  debug = 0
+		  no_cache = 1
+	additionalHeaders = Content-type:application/json
+  }
+}

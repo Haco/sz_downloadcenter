@@ -44,7 +44,6 @@ class DivisionController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 
 	/**
 	 * action list
-	 *
 	 * @return void
 	 */
 	public function listAction() {
@@ -62,5 +61,14 @@ class DivisionController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 		$this->view->assign('division', $division);
 	}
 
+	/**
+	 * action showStaticResult
+	 *
+	 * @param integer $productId
+	 * @return void
+	 */
+	public function showStaticResultAction($productId) {
+		$this->view->assign('debug', $productId);
+	}
 }
 ?>

@@ -138,9 +138,7 @@ jQuery(document).ready(function() {
 			});
 		}
 	});
-
 });
-
 
 function checkApprovalsW(owl) {
 	var outerWrapW = jQuery('#approvalList .approvalWrap').outerWidth();

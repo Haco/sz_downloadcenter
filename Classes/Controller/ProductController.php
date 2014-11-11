@@ -87,10 +87,13 @@ class ProductController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
 	/**
 	 * action showSetcard
-	 *
+	 * @param integer $downloadProductId
 	 * @return void
 	 */
-	public function showSetcardAction() {
+	public function showSetcardAction($downloadProductId) {
+		if ($downloadProductId) {
+			$this->view->assign('debug', $downloadProductId);
+		}
 		$productId = $this->settings['productId'];
 		$product = $this->productRepository->findByUid($productId);
 		$files = $this->fileRepository->findByProduct($product);
@@ -122,6 +125,15 @@ class ProductController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 	}
 
 	/**
+	 * action showDownloadButton
+	 *
+	 * @return void
+	 */
+	public function showDownloadButtonAction() {
+
+	}
+
+	/**
 	 * @param  \ArrayAccess $data
 	 * @param  string $key
 	 * @param  array $approvals
@@ -141,6 +153,5 @@ class ProductController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
 		return $approvals;
 	}
-
 }
 ?>

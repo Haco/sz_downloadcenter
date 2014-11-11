@@ -7,11 +7,10 @@ if (!defined('TYPO3_MODE')) {
 	'Ecom.' . $_EXTKEY,
 	'Downloadcenter',
 	array(
-		'Division' => 'list, show',
-		'Category' => 'list, show',
-		'Product' => 'list, show',
-		'File' => 'list, show',
-
+		'Division' => 'list,show,showStaticResult',
+		'Category' => 'list,show',
+		'Product' => 'list,show',
+		'File' => 'list,show',
 	),
 	// non-cacheable actions
 	array(
@@ -19,7 +18,6 @@ if (!defined('TYPO3_MODE')) {
 		'Category' => '',
 		'Product' => '',
 		'File' => '',
-
 	)
 );
 
@@ -27,9 +25,8 @@ if (!defined('TYPO3_MODE')) {
 	'Ecom.' . $_EXTKEY,
 	'Setcard',
 	array(
-		'Product' => 'list, show',
-		'File' => 'list, show',
-
+		'Product' => 'list,show',
+		'File' => 'list,show',
 	),
 	// non-cacheable actions
 	array(
@@ -38,6 +35,19 @@ if (!defined('TYPO3_MODE')) {
 	)
 );
 
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+	'Ecom.' . $_EXTKEY,
+	'DownloadButton',
+	array(
+		'Product' => 'showDownloadButton,show,',
+		'Division' => 'showStaticResult,list'
+	),
+	// non-cacheable actions
+	array(
+		'Product' => '',
+		'Division' => '',
+	)
+);
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
 	'Ecom.' . $_EXTKEY,

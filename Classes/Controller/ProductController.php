@@ -130,7 +130,14 @@ class ProductController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 	 * @return void
 	 */
 	public function showDownloadButtonAction() {
-
+		if (is_array($this->settings)) {
+			$product = $this->productRepository->findByUid($this->settings['downloadProductId']);
+			$customClasses = str_replace(',', ' ', str_replace(' ', '', $this->settings['customClasses']));
+			$this->view->assignMultiple(array(
+				'product' => $product,
+				'customClasses' => $customClasses,
+			));
+		}
 	}
 
 	/**

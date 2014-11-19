@@ -7,7 +7,7 @@ if (!defined('TYPO3_MODE')) {
 	'Ecom.' . $_EXTKEY,
 	'Downloadcenter',
 	array(
-		'Division' => 'list,show,showStaticResult',
+		'Division' => 'list,show',
 		'Category' => 'list,show',
 		'Product' => 'list,show',
 		'File' => 'list,show',
@@ -40,7 +40,7 @@ if (!defined('TYPO3_MODE')) {
 	'DownloadButton',
 	array(
 		'Product' => 'showDownloadButton,show,',
-		'Division' => 'showStaticResult,list'
+		'Division' => 'list'
 	),
 	// non-cacheable actions
 	array(

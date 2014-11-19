@@ -43,10 +43,32 @@ class DivisionController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 	protected $divisionRepository;
 
 	/**
+	 * categoryRepository
+	 *
+	 * @var \Ecom\SzDownloadcenter\Domain\Repository\CategoryRepository
+	 * @inject
+	 */
+	protected $categoryRepository;
+
+	/**
 	 * action list
 	 * @return void
 	 */
 	public function listAction() {
+		// Get the arguments of the downloadButton plugin (UID of selected Product)
+		if($this->request->hasArgument('dlProductId')) {
+			$dlProductId = (int) $this->request->getArgument('dlProductId');
+			// Get the first returning category ('setLimit => 1' in Repo)
+			$productCategory = $this->categoryRepository->findCategoryByProduct($dlProductId)[0];
+
+			$this->view->assignMultiple(array(
+				'downloadButtonPlugin' => array(
+					'dlProductId' => $dlProductId,
+					'productCategory' => $productCategory,
+					'productDivision' => $this->divisionRepository->findByUid($productCategory->getDivision()),
+				),
+			));
+		}
 		$divisions = $this->divisionRepository->findAllByLang($GLOBALS['TSFE']->sys_language_uid);
 		$this->view->assign('divisions', $divisions);
 	}
@@ -59,16 +81,6 @@ class DivisionController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 	 */
 	public function showAction(\Ecom\SzDownloadcenter\Domain\Model\Division $division) {
 		$this->view->assign('division', $division);
-	}
-
-	/**
-	 * action showStaticResult
-	 *
-	 * @param integer $productId
-	 * @return void
-	 */
-	public function showStaticResultAction($productId) {
-		$this->view->assign('debug', $productId);
 	}
 }
 ?>

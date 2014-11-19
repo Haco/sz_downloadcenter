@@ -19,7 +19,7 @@
 								<items>
 									<numIndex index="1">
 										<numIndex index="0">Download Button</numIndex>
-										<numIndex index="1">Product->showDownloadButton;Product->show;Division->showStaticResult</numIndex>
+										<numIndex index="1">Product->showDownloadButton;Product->show;Division->list</numIndex>
 									</numIndex>
 								</items>
 								<maxitems>1</maxitems>

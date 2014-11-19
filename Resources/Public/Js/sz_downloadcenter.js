@@ -36,8 +36,6 @@ jQuery(document).ready(function() {
 				scrollTop: jQuery(rel).offset().top - 100
 			}, 500);
 		});
-
-
 	}
 
 
@@ -139,6 +137,29 @@ jQuery(document).ready(function() {
 		}
 	});
 });
+
+function showProductFiles($productId) {
+	console.log($productId + 'hello');
+	if ($productId != 0) {
+		jQuery.ajax({
+			dataType: "json",
+			data: 'tx_szdownloadcenter_pi97[productId]=' + $productId + '&type=89657202',
+			success: function(result) {
+				jQuery('#productSelectInfo').addClass('hide');
+				if (result['success'] === true) {
+					jQuery('#productData').html(result['content']);
+					jQuery('#accordion').accordion({
+						heightStyle: "content",
+						autoHeight: false,
+						clearStyle: true
+					});
+				} else {
+					console.log('just nope');
+				}
+			}
+		});
+	}
+}
 
 function checkApprovalsW(owl) {
 	var outerWrapW = jQuery('#approvalList .approvalWrap').outerWidth();

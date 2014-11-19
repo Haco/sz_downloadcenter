@@ -50,6 +50,14 @@ class Category extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	protected $title;
 
 	/**
+	 * Division
+	 *
+	 * @var integer
+	 * @validate NotEmpty
+	 */
+	protected $division;
+
+	/**
 	 * products
 	 *
 	 * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ecom\SzDownloadcenter\Domain\Model\Product>
@@ -98,6 +106,26 @@ class Category extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	 */
 	public function setTitle($title) {
 		$this->title = $title;
+	}
+
+	/**
+	 * Sets the division
+	 *
+	 * @param integer $division
+	 * @return void
+	 */
+	public function setDivision($division) {
+		$this->division = $division;
+	}
+
+	/**
+	 * Returns the division
+	 *
+	 * @return integer $division
+	 */
+	public function getDivision() {
+
+		return $this->division;
 	}
 
 	/**

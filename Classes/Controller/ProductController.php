@@ -85,15 +85,12 @@ class ProductController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
 	}
 
+
 	/**
 	 * action showSetcard
-	 * @param integer $downloadProductId
 	 * @return void
 	 */
-	public function showSetcardAction($downloadProductId) {
-		if ($downloadProductId) {
-			$this->view->assign('debug', $downloadProductId);
-		}
+	public function showSetcardAction() {
 		$productId = $this->settings['productId'];
 		$product = $this->productRepository->findByUid($productId);
 		$files = $this->fileRepository->findByProduct($product);

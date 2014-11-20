@@ -2,7 +2,29 @@
 if (!defined('TYPO3_MODE')) {
 	die ('Access denied.');
 }
+// PAGES
+$newPageColumns = array(
+	'tx_downloadcenter_product_id' => array (
+		'exclude' => 1,
+		'label' => 'Link DownloadCenter Product',
+		'config' => array (
+			'type' => 'select',
+			'foreign_table' => 'tx_szdownloadcenter_domain_model_product',
+			'size' => '10',
+			'maxitems' => '1',
+			'minitems' => '0',
+			'wizards' => Array(
+				'_PADDING' => 12,
+				'_VALIGN' => 'middle',
+				'suggest' => array(
+					'type' => 'suggest'
+				),
+			),
+		),
+	),
+);
 
+// REGISTER PLUGINS
 TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
 	$_EXTKEY,
 	'Downloadcenter',
@@ -20,10 +42,17 @@ TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
 	'DownloadButton',
 	'Download Center: Download Button'
 );
-
+// ADD TS FILE
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'Downloadcenter');
 
-/**
+// Add the extended page fields
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', $newPageColumns, 1);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages_language_overlay', $newPageColumns, 1);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages', '--div--;Download Center, tx_downloadcenter_product_id');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages_language_overlay', '--div--;Download Center, tx_downloadcenter_product_id');
+
+
+	/**
  * Allow tables on standard pages
  */
 // \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_szdownloadcenter_domain_model_approval');

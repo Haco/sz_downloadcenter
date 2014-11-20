@@ -9,6 +9,9 @@ $newPageColumns = array(
 		'label' => 'Link DownloadCenter Product',
 		'config' => array (
 			'type' => 'select',
+			'items' => array(
+				array('', -1)
+			),
 			'foreign_table' => 'tx_szdownloadcenter_domain_model_product',
 			'size' => '10',
 			'maxitems' => '1',

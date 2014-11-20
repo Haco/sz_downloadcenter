@@ -69,6 +69,12 @@
 							<label>Link to Product</label>
 							<config>
 								<type>select</type>
+								<items type='array'>
+									<numIndex index='0' type='array'>
+										<numIndex index='0'></numIndex>
+										<numIndex index='1'>-1</numIndex>
+									</numIndex>
+								</items>
 								<foreign_table>tx_szdownloadcenter_domain_model_product</foreign_table>
 								<size>10</size>
 								<maxitems>1</maxitems>

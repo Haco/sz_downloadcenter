@@ -127,18 +127,20 @@ class ProductController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 	 * @return void
 	 */
 	public function showDownloadButtonAction() {
+		$productId = false;
 		// Get the product ID from the current page.
-		if ($GLOBALS['TSFE']->page['tx_downloadcenter_product_id'] && !$this->settings['overrideProductId']) {
+		if ($GLOBALS['TSFE']->page['tx_downloadcenter_product_id'] > 0 && !$this->settings['overrideProductId']) {
 			$productId = $GLOBALS['TSFE']->page['tx_downloadcenter_product_id'];
-		} elseif(is_array($this->settings && $this->settings['downloadProductId'])) {
+		} elseif(is_array($this->settings) && $this->settings['downloadProductId'] > 0) {
 			$productId = $this->settings['downloadProductId'];
 		}
 
-		$product = $this->productRepository->findByUid($productId);
+		if ($productId) $product = $this->productRepository->findByUid($productId);
 		$customClasses = $this->settings['customClasses'] ? str_replace(',', ' ', str_replace(' ', '', $this->settings['customClasses'])) : false;
 
 		$this->view->assignMultiple(array(
 			'product' => $product,
+			'productId' => $productId,
 			'customClasses' => $customClasses,
 		));
 

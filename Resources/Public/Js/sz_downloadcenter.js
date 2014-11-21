@@ -136,10 +136,16 @@ jQuery(document).ready(function() {
 			});
 		}
 	});
+
+	jQuery('.typo3-message').on('click', function() {
+		jQuery(this).slideUp('slow', function() {
+			jQuery(this).remove();
+		});
+	});
+
 });
 
 function showProductFiles($productId) {
-	console.log($productId + 'hello');
 	if ($productId != 0) {
 		jQuery.ajax({
 			dataType: "json",
@@ -195,3 +201,4 @@ function resetDownloadCenter(ids, checkbox) {
 	}
 	jQuery('#productData').html('');
 }
+

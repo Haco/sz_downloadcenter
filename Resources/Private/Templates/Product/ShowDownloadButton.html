@@ -1,31 +1,13 @@
-{namespace sz=Ecom\SzDownloadcenter\ViewHelpers}
-
 <f:if condition="{settings.renderAsButton}"><div class="morelink"></f:if>
-	<f:if condition="{productId}">
+	<f:if condition="{product}">
 		<f:then>
 			<f:link.page pageUid="{f:if(condition: settings.pluginPagePid, then: settings.pluginPagePid, else: '120')}" additionalParams="{tx_szdownloadcenter_downloadcenter:'{dlProductId:product.uid}'}" class="{customClasses}" noCacheHash="1" >
-				<f:if condition="{settings.overrideButtonLabel}">
-					<f:then>
-						{settings.overrideButtonLabel}
-					</f:then>
-					<f:else>
-						<f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:button_label.downloadButton" />
-					</f:else>
-				</f:if>
-				<f:if condition="{settings.renderAsButton}"> <i class="arrow"></i></f:if>
+				<f:render partial="Product/DownloadLink" />
 			</f:link.page>
 		</f:then>
 		<f:else>
 			<f:link.page pageUid="{f:if(condition: settings.pluginPagePid, then: settings.pluginPagePid, else: '120')}" class="{customClasses}" noCacheHash="1" >
-				<f:if condition="{settings.overrideButtonLabel}">
-					<f:then>
-						{settings.overrideButtonLabel}
-					</f:then>
-					<f:else>
-						<f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:button_label.downloadButton" />
-					</f:else>
-				</f:if>
-				<f:if condition="{settings.renderAsButton}"> <i class="arrow"></i></f:if>
+				<f:render partial="Product/DownloadLink" />
 			</f:link.page>
 		</f:else>
 	</f:if>

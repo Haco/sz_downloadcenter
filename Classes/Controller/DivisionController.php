@@ -59,13 +59,15 @@ class DivisionController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 		if($this->request->hasArgument('dlProductId')) {
 			$dlProductId = (int) $this->request->getArgument('dlProductId');
 			// Get the first returning category ('setLimit => 1' in Repo)
-			$productCategory = $this->categoryRepository->findCategoryByProduct($dlProductId)[0];
+			$productCategory = (!$this->categoryRepository->findCategoryByProduct($dlProductId)[0] instanceof \Ecom\SzDownloadcenter\Domain\Model\Category) ? $this->addFlashMessage('No Category found for the Product with ID: ' . $dlProductId, '', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING) : $this->categoryRepository->findCategoryByProduct($dlProductId)[0];
+			// Get the division by category
+			$productDivision = ($productCategory instanceof \Ecom\SzDownloadcenter\Domain\Model\Category) ? ($this->divisionRepository->findByUid($productCategory->getDivision()) instanceof \Ecom\SzDownloadcenter\Domain\Model\Division ? $this->divisionRepository->findByUid($productCategory->getDivision()) : $this->addFlashMessage('No Division found for the Category: ' . $productCategory->getTitle() , '', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING)) : '';
 
 			$this->view->assignMultiple(array(
 				'downloadButtonPlugin' => array(
 					'dlProductId' => $dlProductId,
 					'productCategory' => $productCategory,
-					'productDivision' => $this->divisionRepository->findByUid($productCategory->getDivision()),
+					'productDivision' => $productDivision,
 				),
 			));
 		}

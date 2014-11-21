@@ -1,0 +1,9 @@
+<f:if condition="{settings.overrideButtonLabel}">
+	<f:then>
+		{settings.overrideButtonLabel}
+	</f:then>
+	<f:else>
+		<f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:button_label.downloadButton" />
+	</f:else>
+</f:if>
+<f:if condition="{settings.renderAsButton}"> <i class="arrow"></i></f:if>

@@ -271,6 +271,9 @@
 		<trans-unit id="tx_szdownloadcenter_domain_model_product.title" xml:space="preserve">
 			<source>Title</source>
 		</trans-unit>
+		<trans-unit id="button_label.downloadButton" xml:space="preserve">
+			<source>Download</source>
+		</trans-unit>
 		</body>
 	</file>
 </xliff>

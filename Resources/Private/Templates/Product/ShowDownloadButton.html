@@ -1,0 +1,14 @@
+<f:if condition="{settings.renderAsButton}"><div class="morelink"></f:if>
+	<f:if condition="{product}">
+		<f:then>
+			<f:link.page pageUid="{f:if(condition: settings.pluginPagePid, then: settings.pluginPagePid, else: '120')}" additionalParams="{tx_szdownloadcenter_downloadcenter:'{dlProductId:product.uid}'}" class="{customClasses}" noCacheHash="1" >
+				<f:render partial="Product/DownloadLink" />
+			</f:link.page>
+		</f:then>
+		<f:else>
+			<f:link.page pageUid="{f:if(condition: settings.pluginPagePid, then: settings.pluginPagePid, else: '120')}" class="{customClasses}" noCacheHash="1" >
+				<f:render partial="Product/DownloadLink" />
+			</f:link.page>
+		</f:else>
+	</f:if>
+<f:if condition="{settings.renderAsButton}"></div></f:if>

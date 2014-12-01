@@ -12,6 +12,14 @@ CREATE TABLE pages_language_overlay (
 	tx_downloadcenter_product_id int(11) DEFAULT '0' NOT NULL
 );
 
+
+#
+# Table structure for table 'tt_content'
+#
+CREATE TABLE tt_content (
+	tx_downloadcenter_add_product_download_button int(1) DEFAULT '0' NOT NULL,
+);
+
 #
 # Table structure for table 'tx_szdownloadcenter_domain_model_division'
 #

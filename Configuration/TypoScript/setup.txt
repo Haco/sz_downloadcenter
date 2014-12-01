@@ -19,7 +19,6 @@ plugin.tx_szdownloadcenter {
 	}
 }
 
-
 config.tx_extbase {
 	persistence {
 		classes {
@@ -62,9 +61,6 @@ config.tx_extbase {
 	}
 }
 
-
-
-
 szdownloadCategory = PAGE
 szdownloadCategory {
   typeNum = 89657201
@@ -81,7 +77,6 @@ szdownloadCategory {
   }
 }
 
-
 szdownloadProduct = PAGE
 szdownloadProduct {
   typeNum = 89657202
@@ -96,4 +91,31 @@ szdownloadProduct {
 		  no_cache = 1
 	additionalHeaders = Content-type:application/json
   }
+}
+
+#### Product Download Button
+#### For TT_CONTENT
+tt_content.text.20.append = COA
+tt_content {
+	text {
+		20.append.455 = TEXT
+		20.append.455 {
+			value.data = LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:button_label.downloadButton
+			typolink {
+				parameter = {$plugin.tx_szdownloadcenter.persistence.pluginPagePid}
+				additionalParams = &tx_szdownloadcenter_downloadcenter[dlProductId]={page:tx_downloadcenter_product_id}
+				additionalParams.insertData = 1
+				title.data = LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:button_label.downloadButton
+				ATagBeforeWrap = 1
+				wrap = | <i class="arrow"></i>
+			}
+
+			fieldRequired = tx_downloadcenter_add_product_download_button
+			wrap = <div class="morelink">|</div>
+			override.cObject = TEXT
+			override.cObject.typolink {
+				jumpurl = 1
+			}
+		}
+	}
 }

@@ -151,6 +151,9 @@
 		<trans-unit id="tx_szdownloadcenter_domain_model_product.zone" xml:space="preserve">
 			<source>Zone</source>
 		</trans-unit>
+		<trans-unit id="tx_downloadcenter_add_product_download_button" xml:space="preserve">
+			<source>Add Product Download Button</source>
+		</trans-unit>
 		</body>
 	</file>
 </xliff>

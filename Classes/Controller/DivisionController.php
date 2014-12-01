@@ -58,6 +58,9 @@ class DivisionController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 		// Get the arguments of the downloadButton plugin (UID of selected Product)
 		if($this->request->hasArgument('dlProductId')) {
 			$dlProductId = (int) $this->request->getArgument('dlProductId');
+			if (empty($dlProductId) || $dlProductId <= 0) {
+				$this->redirect('list');
+			}
 			// Get the first returning category ('setLimit => 1' in Repo)
 			$productCategory = (!$this->categoryRepository->findCategoryByProduct($dlProductId)[0] instanceof \Ecom\SzDownloadcenter\Domain\Model\Category) ? $this->addFlashMessage('No Category found for the Product with ID: ' . $dlProductId, '', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING) : $this->categoryRepository->findCategoryByProduct($dlProductId)[0];
 			// Get the division by category

@@ -27,6 +27,17 @@ $newPageColumns = array(
 	),
 );
 
+// TT_CONTENT
+$newContentColumns = array (
+	'tx_downloadcenter_add_product_download_button' => Array (
+		'label' => 'LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang_db.xlf:tx_downloadcenter_add_product_download_button',
+		'l10n_mode' => 'exclude',
+		'config' => Array (
+			'type' => 'check'
+		),
+	),
+);
+
 // REGISTER PLUGINS
 TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
 	$_EXTKEY,
@@ -54,6 +65,13 @@ TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages', '--div--;Download Center, tx_downloadcenter_product_id');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages_language_overlay', '--div--;Download Center, tx_downloadcenter_product_id');
 
+// Add TT_CONTENT Fields
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $newContentColumns, 1);
+$TCA['tt_content']['palettes']['sz_downloadcenter'] = array(
+	'showitem' => 'tx_downloadcenter_add_product_download_button',
+	'canNotCollapse' => 1
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('tt_content','--palette--;SZ Download Center;sz_downloadcenter', 'text,textpic', 'after:rte_enabled');
 
 	/**
  * Allow tables on standard pages

@@ -34,90 +34,90 @@ namespace Ecom\SzDownloadcenter\Controller;
  */
 class CategoryController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
 
-    /**
-     * categoryRepository
-     *
-     * @var \Ecom\SzDownloadcenter\Domain\Repository\CategoryRepository
-     * @inject
-     */
-    protected $categoryRepository;
+	/**
+	 * categoryRepository
+	 *
+	 * @var \Ecom\SzDownloadcenter\Domain\Repository\CategoryRepository
+	 * @inject
+	 */
+	protected $categoryRepository;
 
-    /**
-     * action list
-     *
-     * @return void
-     */
-    public function listAction() {
-        $categories = $this->categoryRepository->findAll();
-        $this->view->assign('categories', $categories);
-    }
+	/**
+	 * action list
+	 *
+	 * @return void
+	 */
+	public function listAction() {
+		$categories = $this->categoryRepository->findAll();
+		$this->view->assign('categories', $categories);
+	}
 
-    /**
-     * action show
-     *
-     * @param \Ecom\SzDownloadcenter\Domain\Model\Category $category
-     * @return void
-     */
-    public function showAction(\Ecom\SzDownloadcenter\Domain\Model\Category $category) {
-        $this->view->assign('category', $category);
-    }
+	/**
+	 * action show
+	 *
+	 * @param \Ecom\SzDownloadcenter\Domain\Model\Category $category
+	 * @return void
+	 */
+	public function showAction(\Ecom\SzDownloadcenter\Domain\Model\Category $category) {
+		$this->view->assign('category', $category);
+	}
 
-    /**
-     * action getByDivision
-     * @return mixed
-     */
-    public function getByDivisionAction() {
-        $divisionId = $this->request->getArgument('divisionId');
-        $categories = $this->categoryRepository->findByDivision($divisionId);
+	/**
+	 * action getByDivision
+	 * @return mixed
+	 */
+	public function getByDivisionAction() {
+		$divisionId = $this->request->getArgument('divisionId');
+		$categories = $this->categoryRepository->findByDivision($divisionId);
 
-        $this->view->assign('categories', $categories);
+		$this->view->assign('categories', $categories);
 
-        $content = $this->view->render();
+		$content = $this->view->render();
 
-        return json_encode(array(
-            'success' => TRUE,
-            'content' => $content
-        ));
-    }
+		return json_encode(array(
+			'success' => TRUE,
+			'content' => $content
+		));
+	}
 
-    /**
-     * action getProductList
-     * @return mixed
-     */
-    public function getProductListAction() {
-        $arguments = $this->request->getArguments();
-        $categoryId = $arguments['categoryId'];
-        $discontinued = $arguments['discontinued'];
+	/**
+	 * action getProductList
+	 * @return mixed
+	 */
+	public function getProductListAction() {
+		$arguments = $this->request->getArguments();
+		$categoryId = $arguments['categoryId'];
+		$discontinued = $arguments['discontinued'];
 
-        $categories = $this->categoryRepository->findByUid($categoryId);
-        $products = $categories->getProducts();
+		$categories = $this->categoryRepository->findByUid($categoryId);
+		$products = $categories->getProducts();
 
-        if (count($products) === 0)
-            $products = $categories->getLocalization()->getProducts();
+		if (count($products) === 0)
+			$products = $categories->getLocalization()->getProducts();
 
-        $productActiveArr = array();
-        $productDiscontinued = array();
-        foreach ($products as $k => $product) {
-            if ($product->isDiscontinued()) {
-                $productDiscontinued[ $product->getSorting() ] = $product;
-            } else {
-                $productActiveArr[ $product->getSorting() ] = $product;
-            }
-        }
-        ksort($productActiveArr);
-        ksort($productDiscontinued);
-        $productArr = array_merge($productActiveArr, $productDiscontinued);
+		$productActiveArr = array();
+		$productDiscontinued = array();
+		foreach ($products as $k => $product) {
+			if ($product->isDiscontinued()) {
+				$productDiscontinued[ $product->getSorting() ] = $product;
+			} else {
+				$productActiveArr[ $product->getSorting() ] = $product;
+			}
+		}
+		ksort($productActiveArr);
+		ksort($productDiscontinued);
+		$productArr = array_merge($productActiveArr, $productDiscontinued);
 
-        $this->view->assign('products', $productArr);
-        $this->view->assign('discontinued', $discontinued);
-        $content = $this->view->render();
+		$this->view->assign('products', $productArr);
+		$this->view->assign('discontinued', $discontinued);
+		$content = $this->view->render();
 
-        return json_encode(array(
-            'success' => TRUE,
-            'content' => $content
-        ));
+		return json_encode(array(
+			'success' => TRUE,
+			'content' => $content
+		));
 
-    }
+	}
 
 }
 ?>

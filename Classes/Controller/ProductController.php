@@ -127,6 +127,8 @@ class ProductController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 	 */
 	public function showDownloadButtonAction() {
 		$productId = '';
+		$pluginPageId = (!empty($this->settings['pluginPagePid'])) ? $this->settings['pluginPagePid'] : $this->addFlashMessage('Please set the Plugin PID in the constants.', 'Missing Constant Value', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING);
+
 		// Get the product ID from the current page.
 		// Else from included plugin
 		if ($GLOBALS['TSFE']->page['tx_downloadcenter_product_id'] > 0 && !$this->settings['overrideProductId']) {
@@ -142,6 +144,7 @@ class ProductController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
 		$this->view->assignMultiple(array(
 			'product' => ($product instanceof \Ecom\SzDownloadcenter\Domain\Model\Product) ? $product : '',
+			'pluginPageId' => $pluginPageId,
 			'customClasses' => $customClasses,
 		));
 	}

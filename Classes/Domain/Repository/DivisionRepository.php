@@ -60,5 +60,6 @@ class DivisionRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
 			$query->equals('sys_language_uid', $languageId)
 		)->execute();
 	}
+
 }
 ?>

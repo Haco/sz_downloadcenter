@@ -1,13 +1,15 @@
 <f:layout name="Default" />
+
 <f:section name="main">
-    <f:flashMessages renderMode="div" />
+
+
     <div id="productSelect">
         <select name="division" id="divisionSel">
             <option value="0">
                 <f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:tx_szdownloadcenter_domain_model_file.selectDivision" />
             </option>
             <f:for each="{divisions}" as="division">
-                <option value="{division.uid}" {f:if(condition:'{0: downloadButtonPlugin.productDivision.uid} == {0: division.uid}', then:'selected="selected"', else:'')}>{division.title}</option>
+                <option value="{division.uid}">{division.title}</option>
             </f:for>
         </select>
 
@@ -15,22 +17,12 @@
             <option value="0">
                 <f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:tx_szdownloadcenter_domain_model_file.selectCategory" />
             </option>
-            <f:if condition="{downloadButtonPlugin.productDivision}">
-                <f:for each="{downloadButtonPlugin.productDivision.categories}" as="productCategory">
-                   <option value="{productCategory.uid}" {f:if(condition:'{0: downloadButtonPlugin.productCategory.uid} == {0: productCategory.uid}', then:'selected="selected"', else:'')}>{productCategory.title}</option>
-                </f:for>
-            </f:if>
         </select>
 
         <select name="product" id="productSel" disabled="disabled">
             <option value="0">
                 <f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:tx_szdownloadcenter_domain_model_file.selectProduct" />
             </option>
-            <f:if condition="{downloadButtonPlugin.productCategory}">
-                <f:for each="{downloadButtonPlugin.productCategory.products}" as="categoryProduct">
-                    <option value="{categoryProduct.uid}" {f:if(condition:'{0: downloadButtonPlugin.dlProductId} == {0: categoryProduct.uid}', then:'selected="selected"', else:'')}>{categoryProduct.title}</option>
-                </f:for>
-            </f:if>
         </select>
 
         <div class="discontinuedBox disabled">
@@ -44,16 +36,6 @@
     <div id="productSelectInfo">
         <f:translate key="LLL:EXT:sz_downloadcenter/Resources/Private/Language/locallang.xlf:tx_szdownloadcenter_domain_model_file.info" />
     </div>
-
-    <f:if condition="{downloadButtonPlugin.dlProductId}">
-        <div id="ecom-downloadcenter-data-dlProductId" data-dlproductid="{downloadButtonPlugin.dlProductId}"></div>
-            <script type="text/javascript">
-                jQuery(document).ready(function() {
-                    jQuery('#categorySel, #productSel').removeAttr('disabled');
-                    showProductFiles(jQuery('#ecom-downloadcenter-data-dlProductId').data('dlproductid'));
-                });
-            </script>
-    </f:if>
 
     <div id="productData">
 

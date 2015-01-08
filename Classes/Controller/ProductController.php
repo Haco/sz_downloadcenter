@@ -87,6 +87,7 @@ class ProductController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
 	/**
 	 * action showSetcard
+	 *
 	 * @return void
 	 */
 	public function showSetcardAction() {
@@ -121,32 +122,6 @@ class ProductController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 	}
 
 	/**
-	 * action showDownloadButton
-	 *
-	 * @return void
-	 */
-	public function showDownloadButtonAction() {
-		$productId = '';
-		// Get the product ID from the current page.
-		// Else from included plugin
-		if ($GLOBALS['TSFE']->page['tx_downloadcenter_product_id'] > 0 && !$this->settings['overrideProductId']) {
-			$productId = $GLOBALS['TSFE']->page['tx_downloadcenter_product_id'];
-		} elseif(is_array($this->settings) && $this->settings['downloadProductId'] > 0) {
-			$productId = $this->settings['downloadProductId'];
-		}
-		// Custom Classes from plugin
-		$customClasses = $this->settings['customClasses'] ? str_replace(',', ' ', str_replace(' ', '', $this->settings['customClasses'])) : false;
-
-		// Get product by selected ID from BE
-		$product = $productId ? $this->productRepository->findByUid($productId) : '';
-
-		$this->view->assignMultiple(array(
-			'product' => ($product instanceof \Ecom\SzDownloadcenter\Domain\Model\Product) ? $product : '',
-			'customClasses' => $customClasses,
-		));
-	}
-
-	/**
 	 * @param  \ArrayAccess $data
 	 * @param  string $key
 	 * @param  array $approvals
@@ -166,5 +141,6 @@ class ProductController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
 		return $approvals;
 	}
+
 }
 ?>

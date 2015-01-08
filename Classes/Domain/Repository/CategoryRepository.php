@@ -59,17 +59,5 @@ class CategoryRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
 		)->execute();
 	}
 
-	/**
-	 * Finds the corresponding category/categories by the Product UID
-	 *
-	 * @param integer $productUid
-	 * @return array|\TYPO3\CMS\Extbase\Persistence\QueryResultInterface
-	 */
-	public function findCategoryByProduct($productUid) {
-		$query = $this->createQuery();
-		$query->matching($query->contains('products', $productUid));
-		$query->setLimit(1);
-		return $query->execute();
-	}
 }
 ?>

@@ -14,9 +14,6 @@ plugin.tx_szdownloadcenter {
 		# uncomment the following line to enable the new Property Mapper.
 		 rewrittenPropertyMapper = 1
 	}
-	settings {
-		pluginPagePid = {$plugin.tx_szdownloadcenter.persistence.pluginPagePid}
-	}
 }
 
 

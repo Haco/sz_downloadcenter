@@ -338,19 +338,11 @@
 #approvalDetails .approval {
     margin-bottom: 50px;
 }
-#approvalDetails .approval .image {
-    float: left;
-    width: 30%;
-    margin-right: 3%;
-}
 #approvalDetails .approval .image img {
     width: 100%;
     height: auto;
 }
-#approvalDetails .approval .bodytext {
-    float: left;
-    width: 66%;
-}
+
 #approvalDetails .approval .bodytext .head {
     cursor: default;
     font-weight: bold;

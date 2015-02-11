@@ -327,7 +327,7 @@
 #approvalList .approvalWrap #approvals .item img {
     margin-top: 0px;
 }
-#approvalList .approvalWrap #approvals .item span{
+#approvalList .approvalWrap #approvals .item span {
     display: block;
     color: #7C7C80;
     margin-bottom: 5px;
@@ -343,132 +343,74 @@
     height: auto;
 }
 
+#approvalDetails .approval .bodytext ul.certifications-list {
+	margin-bottom: 12px;
+}
 #approvalDetails .approval .bodytext .head {
     cursor: default;
     font-weight: bold;
     color: black;
+	margin-bottom: 10px;
+	font-size: 15px;
 }
-/*
-#approvalDetails .approval .bodytext li {
-    padding: 0 0 0 20px;
-}
-*/
-
-#approvalDetails .approval .bodytext .arrow {
-    background: url('../Images/arrow_btn.png') no-repeat 0px 0px;
-}
-
-#approvalDetails .approval .bodytext .morelink-btn .arrow {
-    background: url('../Images/arrow_btn_down.png') no-repeat 0px 0px;
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 15px;
-    right: 4px;
-    display: inline-block;
-}
-
-.tx-sz-downloadcenter .dropdown-menu {
-    padding: 15px !important;
-    border-radius: 0;
-}
-
-.tx-sz-downloadcenter .dropdown-menu li {
-    margin-bottom: 5px;
-    background: url('/fileadmin/templates/images/landingpage_square.png') no-repeat 0px 7px !important;
-}
-
-.tx-sz-downloadcenter .dropdown-menu li a {
-    padding: 3px 0;
-}
-
-.tx-sz-downloadcenter .dropdown-menu li a:hover {
-    background: none;
-    color: #0083cb;
-}
-
 #approvalDetails .dropdown-menu li {
-    padding: 0 25px 0 0;
-	list-style: none;
+	padding-right: 30px;
+}
+#approvalDetails .dropdown-menu li:hover {
+	background-color: #f1f1f1;
+}
+#approvalDetails .dropdown-menu li a {
+    background: none;
+}
+#approvalDetails .dropdown-menu li a:hover,
+#approvalDetails .dropdown-menu li a:focus {
+	color: #0083cb;
 }
 
-#approvalDetails li.lang-multi { background: url('/typo3/sysext/t3skin/images/flags/multiple.png') no-repeat center right !important; }
-#approvalDetails li.lang-default { background: url('/typo3/sysext/t3skin/images/flags/us.png') no-repeat center right !important; }
-#approvalDetails li.lang-au { background: url('/typo3/sysext/t3skin/images/flags/au.png') no-repeat center right !important; }
-#approvalDetails li.lang-bg { background: url('/typo3/sysext/t3skin/images/flags/bg.png') no-repeat center right !important; }
-#approvalDetails li.lang-br { background: url('/typo3/sysext/t3skin/images/flags/br.png') no-repeat center right !important; }
-#approvalDetails li.lang-ca { background: url('/typo3/sysext/t3skin/images/flags/ca.png') no-repeat center right !important; }
-#approvalDetails li.lang-cn { background: url('/typo3/sysext/t3skin/images/flags/cn.png') no-repeat center right !important; }
-#approvalDetails li.lang-cz { background: url('/typo3/sysext/t3skin/images/flags/cz.png') no-repeat center right !important; }
-#approvalDetails li.lang-de { background: url('/typo3/sysext/t3skin/images/flags/de.png') no-repeat center right !important; }
-#approvalDetails li.lang-dk { background: url('/typo3/sysext/t3skin/images/flags/dk.png') no-repeat center right !important; }
-#approvalDetails li.lang-ee { background: url('/typo3/sysext/t3skin/images/flags/ee.png') no-repeat center right !important; }
-#approvalDetails li.lang-es { background: url('/typo3/sysext/t3skin/images/flags/es.png') no-repeat center right !important; }
-#approvalDetails li.lang-fi { background: url('/typo3/sysext/t3skin/images/flags/fi.png') no-repeat center right !important; }
-#approvalDetails li.lang-fr { background: url('/typo3/sysext/t3skin/images/flags/fr.png') no-repeat center right !important; }
-#approvalDetails li.lang-gb { background: url('/typo3/sysext/t3skin/images/flags/gb.png') no-repeat center right !important; }
-#approvalDetails li.lang-hu { background: url('/typo3/sysext/t3skin/images/flags/hu.png') no-repeat center right !important; }
-#approvalDetails li.lang-it { background: url('/typo3/sysext/t3skin/images/flags/it.png') no-repeat center right !important; }
-#approvalDetails li.lang-jp { background: url('/typo3/sysext/t3skin/images/flags/jp.png') no-repeat center right !important; }
-#approvalDetails li.lang-kr { background: url('/typo3/sysext/t3skin/images/flags/kr.png') no-repeat center right !important; }
-#approvalDetails li.lang-lt { background: url('/typo3/sysext/t3skin/images/flags/lt.png') no-repeat center right !important; }
-#approvalDetails li.lang-mk { background: url('/typo3/sysext/t3skin/images/flags/mk.png') no-repeat center right !important; }
-#approvalDetails li.lang-nl { background: url('/typo3/sysext/t3skin/images/flags/nl.png') no-repeat center right !important; }
-#approvalDetails li.lang-no { background: url('/typo3/sysext/t3skin/images/flags/no.png') no-repeat center right !important; }
-#approvalDetails li.lang-pl { background: url('/typo3/sysext/t3skin/images/flags/pl.png') no-repeat center right !important; }
-#approvalDetails li.lang-pt { background: url('/typo3/sysext/t3skin/images/flags/pt.png') no-repeat center right !important; }
-#approvalDetails li.lang-ro { background: url('/typo3/sysext/t3skin/images/flags/ro.png') no-repeat center right !important; }
-#approvalDetails li.lang-rs { background: url('/typo3/sysext/t3skin/images/flags/rs.png') no-repeat center right !important; }
-#approvalDetails li.lang-ru { background: url('/typo3/sysext/t3skin/images/flags/ru.png') no-repeat center right !important; }
-#approvalDetails li.lang-sa { background: url('/typo3/sysext/t3skin/images/flags/sa.png') no-repeat center right !important; }
-#approvalDetails li.lang-se { background: url('/typo3/sysext/t3skin/images/flags/se.png') no-repeat center right !important; }
-#approvalDetails li.lang-tr { background: url('/typo3/sysext/t3skin/images/flags/tr.png') no-repeat center right !important; }
-#approvalDetails li.lang-tw { background: url('/typo3/sysext/t3skin/images/flags/tw.png') no-repeat center right !important; }
-#approvalDetails li.lang-us { background: url('/typo3/sysext/t3skin/images/flags/us.png') no-repeat center right !important; }
-#approvalDetails li.lang-za { background: url('/typo3/sysext/t3skin/images/flags/za.png') no-repeat center right !important; }
+#approvalDetails li.lang-multi { background: url('/typo3/sysext/t3skin/images/flags/multiple.png') no-repeat right 18px center; }
+#approvalDetails li.lang-default { background: url('/typo3/sysext/t3skin/images/flags/us.png') no-repeat right 18px center; }
+#approvalDetails li.lang-au { background: url('/typo3/sysext/t3skin/images/flags/au.png') no-repeat right 18px center; }
+#approvalDetails li.lang-bg { background: url('/typo3/sysext/t3skin/images/flags/bg.png') no-repeat right 18px center; }
+#approvalDetails li.lang-br { background: url('/typo3/sysext/t3skin/images/flags/br.png') no-repeat right 18px center; }
+#approvalDetails li.lang-ca { background: url('/typo3/sysext/t3skin/images/flags/ca.png') no-repeat right 18px center; }
+#approvalDetails li.lang-cn { background: url('/typo3/sysext/t3skin/images/flags/cn.png') no-repeat right 18px center; }
+#approvalDetails li.lang-cz { background: url('/typo3/sysext/t3skin/images/flags/cz.png') no-repeat right 18px center; }
+#approvalDetails li.lang-de { background: url('/typo3/sysext/t3skin/images/flags/de.png') no-repeat right 18px center; }
+#approvalDetails li.lang-dk { background: url('/typo3/sysext/t3skin/images/flags/dk.png') no-repeat right 18px center; }
+#approvalDetails li.lang-ee { background: url('/typo3/sysext/t3skin/images/flags/ee.png') no-repeat right 18px center; }
+#approvalDetails li.lang-es { background: url('/typo3/sysext/t3skin/images/flags/es.png') no-repeat right 18px center; }
+#approvalDetails li.lang-fi { background: url('/typo3/sysext/t3skin/images/flags/fi.png') no-repeat right 18px center; }
+#approvalDetails li.lang-fr { background: url('/typo3/sysext/t3skin/images/flags/fr.png') no-repeat right 18px center; }
+#approvalDetails li.lang-gb { background: url('/typo3/sysext/t3skin/images/flags/gb.png') no-repeat right 18px center; }
+#approvalDetails li.lang-hu { background: url('/typo3/sysext/t3skin/images/flags/hu.png') no-repeat right 18px center; }
+#approvalDetails li.lang-it { background: url('/typo3/sysext/t3skin/images/flags/it.png') no-repeat right 18px center; }
+#approvalDetails li.lang-jp { background: url('/typo3/sysext/t3skin/images/flags/jp.png') no-repeat right 18px center; }
+#approvalDetails li.lang-kr { background: url('/typo3/sysext/t3skin/images/flags/kr.png') no-repeat right 18px center; }
+#approvalDetails li.lang-lt { background: url('/typo3/sysext/t3skin/images/flags/lt.png') no-repeat right 18px center; }
+#approvalDetails li.lang-mk { background: url('/typo3/sysext/t3skin/images/flags/mk.png') no-repeat right 18px center; }
+#approvalDetails li.lang-nl { background: url('/typo3/sysext/t3skin/images/flags/nl.png') no-repeat right 18px center; }
+#approvalDetails li.lang-no { background: url('/typo3/sysext/t3skin/images/flags/no.png') no-repeat right 18px center; }
+#approvalDetails li.lang-pl { background: url('/typo3/sysext/t3skin/images/flags/pl.png') no-repeat right 18px center; }
+#approvalDetails li.lang-pt { background: url('/typo3/sysext/t3skin/images/flags/pt.png') no-repeat right 18px center; }
+#approvalDetails li.lang-ro { background: url('/typo3/sysext/t3skin/images/flags/ro.png') no-repeat right 18px center; }
+#approvalDetails li.lang-rs { background: url('/typo3/sysext/t3skin/images/flags/rs.png') no-repeat right 18px center; }
+#approvalDetails li.lang-ru { background: url('/typo3/sysext/t3skin/images/flags/ru.png') no-repeat right 18px center; }
+#approvalDetails li.lang-sa { background: url('/typo3/sysext/t3skin/images/flags/sa.png') no-repeat right 18px center; }
+#approvalDetails li.lang-se { background: url('/typo3/sysext/t3skin/images/flags/se.png') no-repeat right 18px center; }
+#approvalDetails li.lang-tr { background: url('/typo3/sysext/t3skin/images/flags/tr.png') no-repeat right 18px center; }
+#approvalDetails li.lang-tw { background: url('/typo3/sysext/t3skin/images/flags/tw.png') no-repeat right 18px center; }
+#approvalDetails li.lang-us { background: url('/typo3/sysext/t3skin/images/flags/us.png') no-repeat right 18px center; }
+#approvalDetails li.lang-za { background: url('/typo3/sysext/t3skin/images/flags/za.png') no-repeat right 18px center; }
 
-@media (min-width: 1200px) {
-    #approvalList #approvals {
-        padding: 0;
-    }
-    #approvalList .approvalWrap {
-        width: 437px;
-    }
-    #approvalList .approvalWrap #approvals {
-        width: 382px;
-    }
-    #approvalList .approvalWrap #approvals.fit {
-        width: 435px;
-    }
-    #approvalList .approvalWrap #approvals .item {
-        padding: 15px 5px;
-    }
-}
 
 @media (min-width: 981px) and (max-width: 1200px) {
-
-
     #productDetail .wrapper .text {
         width: 340px;
     }
-
 }
-@media (max-width: 980px) {
 
-    #approvalList .approvalWrap {
-        width: 270px;
-    }
-    #approvalList .approvalWrap #approvals.fit {
-        width: 216px;
-    }
-    #approvalList .approvalWrap #approvals {
-        width: 216px;
-    }
-    #approvalList .approvalWrap #approvals .item {
-        padding: 15px;
-    }
-
-    #productSelect select {
+@media (max-width: 991px) {
+   #productSelect select {
         display: block;
     }
 
@@ -489,41 +431,7 @@
     #productFiles #accordion .accordion-inner .lastChange { width: 15%; }
 }
 
-@media (max-width: 767px) {
-
-    #approvalList .approvalWrap {
-        width: 344px;
-    }
-    #approvalList .approvalWrap #approvals {
-        width: 290px;
-    }
-    #approvalList .approvalWrap #approvals.fit {
-        width: 290px;
-    }
-    #approvalList .approvalWrap #approvals .item {
-        padding: 15px;
-    }
-}
-
 @media (max-width: 478px) {
-
-    #approvalList .approvalWrap {
-        width: 208px;
-    }
-    #approvalList .approvalWrap #approvals {
-        width: 154px;
-    }
-    #approvalList .approvalWrap #approvals.fit {
-        width: 208px;
-    }
-    #approvalList .approvalWrap #approvals .item {
-        padding: 15px 5px;
-    }
-    #approvalList .zoneWrap .division,
-    #approvalList .zoneWrap .zone {
-        font-size: 9px;
-        padding: 5px 0;
-    }
 
     #productDetail .wrapper .image,
     #productDetail .wrapper .text {
@@ -548,20 +456,4 @@
     #productFiles #accordion .lastChange {
         display: none;
     }
-
-
-    #approvalDetails .approval .bodytext,
-    #approvalDetails .approval .image {
-        float: none;
-        width: 100%;
-        display: block;
-    }
-    #approvalDetails .approval .image {
-        text-align: center;
-    }
-    #approvalDetails .approval .image img{
-        width: 50%;
-        margin: 0 auto;
-    }
-
 }

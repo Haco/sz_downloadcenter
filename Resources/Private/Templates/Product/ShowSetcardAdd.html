@@ -5,9 +5,9 @@
 	<div id="approvalDetails">
 		<div class="row">
 			<f:for each="{approvals}" as="approval" iteration="iterator">
-				<div class="col-xs-12 col-sm-12 col-md-6 approval" id="ap{approval.data.uid}">
+				<div class="col-xs-12 col-sm-6 col-md-6 approval" id="ap{approval.data.uid}">
 					<div class="row">
-						<div class="col-xs-3 col-sm-4 col-md-5 image">
+						<div class="col-xs-3 col-sm-4 col-md-4 image">
 							<f:if condition="{approval.data.falImage}">
 								<f:then>
 									<f:image src="{approval.data.falImage.uid}" alt="{approval.data.title}" treatIdAsReference="1" />
@@ -20,7 +20,7 @@
 							</f:if>
 						</div>
 
-						<div class="col-xs-9 col-sm-8 col-md-7 bodytext">
+						<div class="col-xs-9 col-sm-8 col-md-8 bodytext">
 							<label class="head">
 								{approval.data.title}
 							</label>
@@ -29,7 +29,7 @@
 								{approval.attestations.1.identification}
 							</f:if>
 
-							<ul class="list">
+							<ul class="list certifications-list">
 								<f:for each="{approval.certifications}" as="certification">
 									<li>
 										{certification.identification}
@@ -41,16 +41,14 @@
 								<f:if condition="{approval.files -> f:count()} > 1">
 									<f:then>
 										<div class="dropdown">
-											<a class="morelink-btn dropdown-toggle" data-toggle="dropdown" href="#">
+											<a class="btn btn-default morelink dropdown-toggle" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
 												<f:translate key="tx_szdownloadcenter_domain_model_certification.download" />
-												<i class="arrow"></i>
 											</a>
-											<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+											<ul class="dropdown-menu" role="menu">
 												<f:for each="{approval.files}" as="file">
-													<li class="lang-{sz:language(languageId:'{file.sysLanguageUid}')}">
+													<li role="menuitem" class="lang-{sz:language(languageId:'{file.sysLanguageUid}')}">
 														<a href="{f:if(condition: '{file.falFile}', then: '{file.falFile.originalResource.publicUrl}', else: '{file.file}')}" target="_blank">
 															{file.title}
-															<f:comment><i class="arrow"></i></f:comment>
 														</a>
 													</li>
 												</f:for>
@@ -59,12 +57,9 @@
 									</f:then>
 									<f:else>
 										<f:for each="{approval.files}" as="file">
-											<div class="morelink">
-												<a href="{f:if(condition: '{file.falFile}', then: '{file.falFile.originalResource.publicUrl}', else: '{file.file}')}" target="_blank">
-													<f:translate key="tx_szdownloadcenter_domain_model_certification.download" />
-													<i class="arrow"></i>
-												</a>
-											</div>
+											<a class="btn btn-default morelink" role="button" href="{f:if(condition: '{file.falFile}', then: '{file.falFile.originalResource.publicUrl}', else: '{file.file}')}" target="_blank">
+												<f:translate key="tx_szdownloadcenter_domain_model_certification.download" />
+											</a>
 										</f:for>
 									</f:else>
 								</f:if>

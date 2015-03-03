@@ -32,6 +32,21 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f1f1', endColorstr='#e4e5e6',GradientType=0 );
 	cursor: pointer;
 }
+#productFiles .ui-accordion-header {
+	position: relative;
+}
+#productFiles .ui-accordion-header:after {
+	content: "";
+	position: absolute;
+	background: url('../Images/acc-arrow-open.png');
+	width: 26px;
+	height: 13px;
+	right: 20px;
+	top: 15px;
+}
+#productFiles .ui-accordion-header.ui-state-active:after {
+	background: url('../Images/acc-arrow-close.png');
+}
 #productFiles #accordion .accordion-inner .fileEnd {
 	text-transform: uppercase;
 }
